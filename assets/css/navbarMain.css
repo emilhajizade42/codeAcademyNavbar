@@ -1,0 +1,218 @@
+header {
+  height: 52px;
+  width: 100%;
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+nav {
+  height: 100%;
+}
+
+.nav_logo_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.nav_logo {
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.nav_menu {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  gap: 17px;
+  padding: 0;
+}
+
+.nav_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+}
+
+.nav_menu li:hover {
+  border-bottom: 3px solid orange;
+}
+
+.nav_menu li:hover .nav_menu_hover_menu {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.nav_menu li:hover .nav_menu_hover_menu nav {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.nav_menu li:hover .nav_menu_hover_menu nav div {
+  padding: 8px 12px;
+  font-weight: normal;
+}
+
+.nav_menu li:hover .nav_menu_hover_menu nav div:hover {
+  background-color: #e2e2e2;
+}
+
+.nav_menu_hover_menu {
+  display: none;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  bottom: 10px;
+  right: 10px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav_button_box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_button_box_icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.nav_button_box_btn {
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 15px 30px;
+  background-color: yellow;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.nav_mob_box {
+  display: none;
+}
+
+@media only screen and (max-width: 994px) {
+  header {
+    height: 90px;
+    width: 100%;
+    padding: 0 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  nav, .nav_button_box {
+    display: none;
+  }
+  .nav_mob_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .nav_mob_box_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    height: 100%;
+    margin-right: 20px;
+  }
+  .fa-whatsapp {
+    font-size: 26px;
+  }
+  .fa-phone {
+    font-size: 24px;
+  }
+  .fa-bars {
+    margin-left: 15px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_logo {
+    width: 160px;
+    height: 60px;
+  }
+}
+/*# sourceMappingURL=navbarMain.css.map */
